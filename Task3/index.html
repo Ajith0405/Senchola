@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+    <style>
+      #Footer h3{
+        color: black;
+      }
+    </style>
+    <!-- Bootstrap CDN Css-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/d9f12dd912.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container-fluid bg-dark">
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark" >
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <img
+                     src="./images/tvs-logo-33704.png"
+                    alt="Tvs Logo"
+                    class="img-fluid mt-1"
+                    width="90px"
+                    height="50px"
+                    
+                    />
+                  </a>
+                  <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                    <ul class="navbar-nav mt-5">
+                      <li class="nav-item btn btn-primary btn-sm me-1 my-1">
+                        <a class="nav-link " href="#home">Home</a>
+                      </li>
+                      <li class="nav-item btn btn-primary btn-sm me-1 my-1">
+                        <a class="nav-link" href="#about">About</a>
+                      </li>
+                      <li class="nav-item btn btn-danger btn-sm me-1 my-1">
+                        <a class="nav-link" href="#buy">Buy Now!</a>
+                      </li>
+                      <li class="nav-item btn btn-success btn-sm me-1 my-1">
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">
+                            Book Test Ride
+                          </button>
+                      </li>  
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+         
+      <div class="row bg-light" id="home">
+        <div class="col-sm-12">
+          <!-- Carousel -->
+          <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide-to="0"
+                class="active"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide-to="2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide-to="3"
+              ></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner my-1">
+              <div class="carousel-item active">
+                <img
+                  src="./images/c1.png"
+                  alt="Los Angeles"
+                  class="d-block"
+                  style="width: 100%"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/c2.jpg"
+                  alt="Chicago"
+                  class="d-block"
+                  style="width: 100%"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/c3.jpg"
+                  alt="New York"
+                  class="d-block"
+                  style="width: 100%"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/c4.jpg"
+                  alt="New York"
+                  class="d-block"
+                  style="width: 100%"
+                />
+              </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#demo"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#demo"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- About -->
+      <div class="row bg-dark" id="about">
+        <div class="col-sm-12 text-sm-center my-4">
+            <h3 style="color: orangered; font-weight:900; text-align: center;">BEHOLD THE NEW TVS NTORQ 125</h3>
+            <h4 style="color: peru;  text-align: center;">OPEN YOUR SENSES TO A REVOLUTIONARY RIDING EXPERIENCE</h4>
+        </div>
+      </div>
+
+      <div class="row bg-dark">
+        <div class="col-sm-5">
+            <img src="./images/engine.JPG" alt="Tvs Ntorq Engine" class="img-fluid rounded-3" >
+        </div>
+        <div class="col-sm-7 justify-content-center">
+            <h3  style="color: peru; font-weight:700; text-align: center;" class="mt-5">TAKE OFF WITH THE 125 3-VALVE CVTi REVV ENGINE</h3>
+        </div>
+      </div>
+
+      <div class="row bg-dark mt-2">
+        <div class="col-sm-5">
+            <img src="./images/tail.JPG" alt="Tvs Ntorq Tail" class="img-fluid rounded-3" >
+        </div>
+        <div class="col-sm-7 justify-content-center">
+            <h3  style="color: peru; font-weight:700; text-align: center;" class="mt-5">CONQUER THE ROADS WITH THE STEALTH AIRCRAFT INSPIRED DESIGN</h3>
+        </div>
+      </div>
+
+      <div class="row bg-dark mt-2">
+        <div class="col-sm-5">
+            <img src="./images/racing.JPG" alt="Tvs Ntorq Engine" class="img-fluid rounded-3" >
+        </div>
+        <div class="col-sm-7 justify-content-center">
+            <h3  style="color: peru; font-weight:700; text-align: center; " class="mt-5">FEEL THE REV WITH TVS RACING INSPIRED PERFORMANCE</h3>
+        </div>
+      </div>
+      <br>
+    
+    <!-- Buy Now -->
+    <div class="container bg-black" id="buy">
+
+    
+        <div class="row justify-content-center bg-dark ">
+            <div class="col-sm">
+                <div class="card container mt-2 bg-light" >
+                    <img class="card-img-top" width="120px" height="240px" src="images/re.JPG" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                      <h4 class="card-title">Race Edition</h4>
+                      <h3>₹ 1,07,000</h3>
+                      <p class="card-text">
+                        <ul>
+                            <li>Race-inspired design with vibrant graphics.</li>
+                            <li>Bluetooth connectivity and a powerful engine.</li>
+                            <li>Delivers both style and performance</li>
+                        </ul>
+                        </p>
+                      <a href="#" class="btn btn-warning container-fluid">Buy</a>
+                    </div>
+                  </div>
+            </div>
+            
+            <div class="col-sm">
+                <div class="card container mt-2 bg-light" >
+                    <img class="card-img-top pt-1" width="120px" height="240px" src="images/xp-mobile.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                      <h4 class="card-title">Race XP</h4>
+                      <h3>₹ 1,12,000</h3>
+                      <p class="card-text">
+                        <ul>
+                            <li>Race-inspired design with vibrant graphics.</li>
+                            <li>Bluetooth connectivity and a powerful engine.</li>
+                            <li>Exhilarating riding experience</li>
+                            <li>Broad Tyers</li>
+                        </ul>
+                        </p>
+                      <a href="#" class="btn btn-warning container-fluid">Buy</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm">
+                <div class="card container mt-2 bg-light" >
+                    <img class="card-img-top pt-1" width="120px" height="240px" src="images/normal.JPG" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                      <h4 class="card-title">Normal Edition</h4>
+                      <h3>₹ 1,00,000</h3>
+                      <p class="card-text">
+                        <ul>
+                            <li>High Performance</li>
+                            <li>Bluetooth connectivity and a powerful engine.</li>
+                            <li>More Comfort</li>
+                            <li>Broad Tyers</li>
+                            <li>High Milage</li>
+                        </ul>
+                        </p>
+                      <a href="#" class="btn btn-warning container-fluid">Buy</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm">
+                <div class="card container mt-2 bg-light" >
+                    <img class="card-img-top pt-1" width="120px" height="240px" src="images/off-road.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                      <h4 class="card-title">Off-Road Edition</h4>
+                      <h3>₹ 1,15,000</h3>
+                      <p class="card-text">
+                        <ul>
+                            <li>Specil Design For Off-road</li>
+                            <li>Bluetooth connectivity and a powerful engine.</li>
+                            <li>Delivers both style and performance</li>
+                            <li>Great Stability</li>
+                        </ul>
+                        </p>
+                      <a href="#" class="btn btn-warning container-fluid">Buy</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Test Drive -->
+     <div class="container-sm mt-3">
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Book A Test Ride</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form action="/action_page.php">
+                    <div class="mb-3 mt-3">
+                        <label for="name" class="form-label">Name:</label>
+                        <input type="name" class="form-control" id="name" placeholder="Enter Name" name="name">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="phone" class="form-label">Phone No:</label>
+                        <input type="phone" class="form-control" id="phone" placeholder="Enter Phone Number" name="phone">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="state" class="form-label">State:</label>
+                        <input type="state" class="form-control" id="state" placeholder="Enter state" name="state">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="city" class="form-label">City:</label>
+                        <input type="city" class="form-control" id="email" placeholder="Enter city" name="city">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="Pin" class="form-label">Pincode:</label>
+                        <input type="pin" class="form-control" id="pin" placeholder="Enter pin" name="pin">
+                    </div>
+                    <div class="mb-3 mt-3">
+                      <label for="email" class="form-label">Email:</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                    </div>
+                    <div class="mb-3 mt-3">
+                    <label for="varient" class="form-label">Select Varient:</label>
+                        <select class="form-select"  class="mb-3 mt-3" >
+                            <option>--Select Varient--</option>
+                            <option>Normal</option>
+                            <option>Race Edition</option>
+                            <option>Race XP</option>
+                          </select>
+                    </div>
+                    
+                    <div class="form-check mb-3">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="license"> Driving License
+                      </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary container-fluid">Submit</button>
+                  </form>
+            </div>
+        </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+
+    <!-- Footer -->
+    <div class="container-fluid bg-primary" id="Footer" style="color: white;">
+        <div class="row mt-3 pt-4 ">
+            <div class="col-sm">
+                <h3>Address</h3>
+                <p>
+                    Post Box No. 4 <br>
+                    Harita, Hosur - 635 109
+                </p>
+            </div>
+            <div class="col-sm">
+                <h3>Contact Us</h3>
+                <p>
+                    Toll Free: 18002587555 <br>
+                    Ph: +91-44-28332115 <br>
+                    Fax: +91-44-28331214
+                </p>
+            </div>
+            <div class="col-sm">
+                <h3>Email</h3>
+                <p>
+                    customercare@tvsmotor.com
+                </p>
+            </div>
+            <div class="col-sm">
+                <h3>Social Media</h3>
+                <i class="fa-brands fa-instagram fa-2xl"></i>
+                <i class="fa-brands fa-facebook fa-2xl"></i>
+                <i class="fa-brands fa-twitter fa-2xl"></i>
+                
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+
+    <!-- Bootstrap CDN Js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
