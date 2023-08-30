@@ -8,6 +8,9 @@
       #Footer h3{
         color: black;
       }
+      .checked{
+        color: orange;
+      }
     </style>
     <!-- Bootstrap CDN Css-->
     <link
@@ -38,17 +41,20 @@
                   <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
                     <ul class="navbar-nav mt-5">
                       <li class="nav-item btn btn-primary btn-sm me-1 my-1">
-                        <a class="nav-link " href="#home">Home</a>
+                        <a class="nav-link " href="#home"><i class="fa-solid fa-house fa-lg"></i> Home</a>
                       </li>
                       <li class="nav-item btn btn-primary btn-sm me-1 my-1">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#about"> <i class="fa-solid fa-address-card fa-lg"></i> About</a>
+                      </li>
+                      <li class="nav-item btn btn-primary btn-sm me-1 my-1">
+                        <a class="nav-link" href="#review"><i class="fa-solid fa-ranking-star fa-lg"></i> Reviews</a>
                       </li>
                       <li class="nav-item btn btn-danger btn-sm me-1 my-1">
-                        <a class="nav-link" href="#buy">Buy Now!</a>
+                        <a class="nav-link" href="#buy">Buy Now <i class="fa-solid fa-cart-shopping fa-lg"></i></a>
                       </li>
                       <li class="nav-item btn btn-success btn-sm me-1 my-1">
                         <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">
-                            Book Test Ride
+                            Book Test Ride <i class="fa-solid fa-motorcycle fa-xl"></i>
                           </button>
                       </li>  
                     </ul>
@@ -92,7 +98,7 @@
                   src="./images/c1.png"
                   alt="Los Angeles"
                   class="d-block"
-                  style="width: 100%"
+                  style="width: 100%;"
                 />
               </div>
               <div class="carousel-item">
@@ -108,7 +114,7 @@
                   src="./images/c3.jpg"
                   alt="New York"
                   class="d-block"
-                  style="width: 100%"
+                  style="width: 100% "
                 />
               </div>
               <div class="carousel-item">
@@ -116,7 +122,7 @@
                   src="./images/c4.jpg"
                   alt="New York"
                   class="d-block"
-                  style="width: 100%"
+                  style="width: 100% "
                 />
               </div>
             </div>
@@ -184,7 +190,7 @@
         <div class="row justify-content-center bg-dark ">
             <div class="col-sm">
                 <div class="card container mt-2 bg-light" >
-                    <img class="card-img-top" width="120px" height="240px" src="images/re.JPG" alt="Card image" style="width:100%">
+                    <img class="card-img-top rounded-4" width="120px" height="240px" src="images/re.JPG" alt="Card image" style="width:100%">
                     <div class="card-body">
                       <h4 class="card-title">Race Edition</h4>
                       <h3>₹ 1,07,000</h3>
@@ -202,7 +208,7 @@
             
             <div class="col-sm">
                 <div class="card container mt-2 bg-light" >
-                    <img class="card-img-top pt-1" width="120px" height="240px" src="images/xp-mobile.jpg" alt="Card image" style="width:100%">
+                    <img class="card-img-top rounded-4 pt-1" width="120px" height="240px" src="images/xp-mobile.jpg" alt="Card image" style="width:100%">
                     <div class="card-body">
                       <h4 class="card-title">Race XP</h4>
                       <h3>₹ 1,12,000</h3>
@@ -220,7 +226,7 @@
             </div>
             <div class="col-sm">
                 <div class="card container mt-2 bg-light" >
-                    <img class="card-img-top pt-1" width="120px" height="240px" src="images/normal.JPG" alt="Card image" style="width:100%">
+                    <img class="card-img-top rounded-4 pt-1" width="120px" height="240px" src="images/normal.JPG" alt="Card image" style="width:100%">
                     <div class="card-body">
                       <h4 class="card-title">Normal Edition</h4>
                       <h3>₹ 1,00,000</h3>
@@ -239,7 +245,7 @@
             </div>
             <div class="col-sm">
                 <div class="card container mt-2 bg-light" >
-                    <img class="card-img-top pt-1" width="120px" height="240px" src="images/off-road.jpg" alt="Card image" style="width:100%">
+                    <img class="card-img-top rounded-4 pt-1" width="120px" height="240px" src="images/off-road.jpg" alt="Card image" style="width:100%">
                     <div class="card-body">
                       <h4 class="card-title">Off-Road Edition</h4>
                       <h3>₹ 1,15,000</h3>
@@ -258,6 +264,112 @@
         </div>
     </div>
 
+    <!-- Reviews -->
+    <div class="container">
+    <div class="row justify-content-center mt-5" id="review">
+        <div class="col-sm ">
+            <div class="card container">
+                <img class="card-img-top rounded-pill p-1" src="./images/jpbhuva29.jpg" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Jpbhuva</h4>
+                  <p class="card-text">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span> </p>
+                <p class="card-text">
+                    The TVS Ntorq 125 is a popular scooter that aims to capture the attention of the youth with its sporty design and advanced features. In this honest 2-star review, we explore the highs and lows of the Ntorq 125, providing a balanced perspective on its performance. </p>
+                <p class="card-text">
+                    <h5>Performance</h5><span>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" style="width:90%"></div>
+                          </div>
+                    </span>
+                    <h5>Milage</h5><span>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" style="width:60%"></div>
+                          </div>
+                    </span>
+                    <h5>Comfort</h5><span>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:80%"></div>
+                          </div>
+                    </span>
+                  </p>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm mt-2">
+            <div class="card container">
+                <img class="card-img-top rounded-pill p-1" src="./images/rohit.jpg" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Rohit</h4>
+                  <p class="card-text">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span> </p>
+                <p class="card-text">
+                    The TVS Ntorq 125 is a great bike that packs a lot of power into a small package and offers an impressive riding experience. It stands out from other motorcycles in its class due to its powerful performance in addition to its sleek design.Engine is most features.
+                </p>
+                <p class="card-text">
+                    <h5>Performance</h5><span>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" style="width:100%"></div>
+                          </div>
+                    </span>
+                    <h5>Milage</h5><span>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" style="width:50%"></div>
+                          </div>
+                    </span>
+                    <h5>Comfort</h5><span>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:70%"></div>
+                          </div>
+                    </span>
+                </p>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm mt-2">
+            <div class="card container">
+                <img class="card-img-top rounded-pill p-1" src="./images/indr.jpg" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Indran</h4>
+                  <p class="card-text">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span> </p>
+                <p class="card-text">
+                    I love the machine, As per a Scotty this is a very comfortable machine. It's look also very Classy. Most important thing is the road presents are very good. The ergonomic design is well thought out and makes it easy to ride for short and long rides making it comfortable even for long journeys.
+                </p>
+                <p class="card-text">
+                    <h5>Performance</h5><span>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" style="width:90%"></div>
+                          </div>
+                    </span>
+                    <h5>Milage</h5><span>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" style="width:50%"></div>
+                          </div>
+                    </span>
+                    <h5>Comfort</h5><span>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:70%"></div>
+                          </div>
+                    </span>
+                  </p>
+                </div>
+              </div>
+        </div>
+    </div>
+    </div>
     <!-- Test Drive -->
      <div class="container-sm mt-3">
       <div class="modal fade" id="myModal">
@@ -268,26 +380,26 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body">
-                <form action="/action_page.php">
+                <form action="/action_page.php" class="was-validated">
                     <div class="mb-3 mt-3">
                         <label for="name" class="form-label">Name:</label>
-                        <input type="name" class="form-control" id="name" placeholder="Enter Name" name="name">
+                        <input type="name" class="form-control" id="name" placeholder="Enter Name" name="name" required>
                     </div>
                     <div class="mb-3 mt-3">
                         <label for="phone" class="form-label">Phone No:</label>
-                        <input type="phone" class="form-control" id="phone" placeholder="Enter Phone Number" name="phone">
+                        <input type="phone" class="form-control" id="phone" placeholder="Enter Phone Number" name="phone" required>
                     </div>
                     <div class="mb-3 mt-3">
                         <label for="state" class="form-label">State:</label>
-                        <input type="state" class="form-control" id="state" placeholder="Enter state" name="state">
+                        <input type="state" class="form-control" id="state" placeholder="Enter state" name="state" required>
                     </div>
                     <div class="mb-3 mt-3">
                         <label for="city" class="form-label">City:</label>
-                        <input type="city" class="form-control" id="email" placeholder="Enter city" name="city">
+                        <input type="city" class="form-control" id="email" placeholder="Enter city" name="city" required>
                     </div>
                     <div class="mb-3 mt-3">
                         <label for="Pin" class="form-label">Pincode:</label>
-                        <input type="pin" class="form-control" id="pin" placeholder="Enter pin" name="pin">
+                        <input type="pin" class="form-control" id="pin" placeholder="Enter pin" name="pin" required>
                     </div>
                     <div class="mb-3 mt-3">
                       <label for="email" class="form-label">Email:</label>
@@ -319,10 +431,10 @@
           </div>
         </div>
       </div>
-
+    
     <!-- Footer -->
-    <div class="container-fluid bg-primary" id="Footer" style="color: white;">
-        <div class="row mt-3 pt-4 ">
+    <div class="container-fluid bg-primary rounded-2" id="Footer" style="color: white;">
+        <div class="row mt-3 pt-4 pb-2 ">
             <div class="col-sm">
                 <h3>Address</h3>
                 <p>
